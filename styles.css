@@ -103,6 +103,10 @@ input:invalid {
     border: 2px solid var(--red);
 }
 
+input:required {
+    border: 1px solid var(--greyish-blue);
+}
+
 .error-container {
     display: flex;
     justify-content: flex-end;
@@ -126,7 +130,7 @@ input:invalid {
     text-align: end;
     font-weight: 500;
     position: relative;
-    bottom: 18px;
+    bottom: 13px;
 }
 
 button {
@@ -214,6 +218,10 @@ footer {
 
     input {
         margin-bottom: 1.4rem;
+    }
+
+    .error-message {
+        bottom: 18px;
     }
 
     .attribution {

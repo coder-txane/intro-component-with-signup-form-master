@@ -42,10 +42,10 @@
         </div>
 
         <!-- Form -->
-        <form id="form">
+        <form id="form" novalidate>
           <div id="form-wrapper">
             <div class="input-container">
-              <input class="input" type="text" id="name" placeholder="First Name" pattern="[A-Za-z]{1,32}">
+              <input class="input" type="text" id="firstname" placeholder="First Name" pattern="[A-Za-z]{1,32}" required>
               <div class="error-container">
                 <img class="icon-error" src="images/icon-error.svg">
                 <em class="error-message" id="fname-error">First Name cannot be empty</em>
@@ -53,7 +53,7 @@
             </div>
 
             <div class="input-container">
-              <input class="input" type="text" id="lastname" placeholder="Last Name" pattern="[A-Za-z]{1,32}">
+              <input class="input" type="text" id="lastname" placeholder="Last Name" pattern="[A-Za-z]{1,32}" required>
               <div class="error-container">
                 <img class="icon-error" src="images/icon-error.svg">
                 <em class="error-message" id="lname-error">Last Name cannot be empty</em>
@@ -61,8 +61,7 @@
             </div>
 
             <div class="input-container">
-              <input class="input" type="email" id="email" placeholder="Address"
-                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+              <input class="input" type="email" id="email" placeholder="Address" required>
               <div class="error-container">
                 <img class="icon-error" src="images/icon-error.svg">
                 <em class="error-message" id="email-error">Looks like this is not an email</em>
@@ -70,7 +69,7 @@
             </div>
 
             <div class="input-container">
-              <input class="input" type="password" id="password" placeholder="Password">
+              <input class="input" type="password" id="password" placeholder="Password" pattern="[0-9a-fA-F]" required>
               <div class="error-container">
                 <img class="icon-error" src="images/icon-error.svg">
                 <em class="error-message" id="password-error">Password cannot be empty</em>
